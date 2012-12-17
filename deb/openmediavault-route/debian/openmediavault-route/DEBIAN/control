@@ -1,0 +1,11 @@
+Package: openmediavault-route
+Version: 0.4
+Architecture: all
+Maintainer: Volker Theile <volker.theile@openmediavault.org>
+Installed-Size: 108
+Depends: openmediavault (>= 0.4)
+Section: net
+Priority: optional
+Homepage: http://www.openmediavault.org
+Description: OpenMediaVault IP routing table plugin
+ Adds the ability to manipulate the IP routing table via WebGUI.

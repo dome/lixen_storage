@@ -1,0 +1,10 @@
+#! /bin/sh
+#
+# Created by configure
+
+CFLAGS='-O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64' \
+CXXFLAGS='-g -O2' \
+'./configure' \
+'--with-php-config=/usr/bin/php-config5' \
+'--prefix=/usr' \
+"$@"

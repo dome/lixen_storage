@@ -1,0 +1,15 @@
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/openmediavault" ]; then
+	update-rc.d openmediavault defaults >/dev/null || exit $?
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/openmediavault-beep" ]; then
+	update-rc.d openmediavault-beep defaults >/dev/null || exit $?
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/openmediavault-configimport" ]; then
+	update-rc.d openmediavault-configimport defaults >/dev/null || exit $?
+fi
+# End automatically added section

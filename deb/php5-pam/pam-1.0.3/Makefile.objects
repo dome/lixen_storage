@@ -1,0 +1,8 @@
+pam.lo: /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/pam.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/pam.c -o pam.lo 
+$(phplibdir)/pam.la: ./pam.la
+	$(LIBTOOL) --mode=install cp ./pam.la $(phplibdir)
+
+./pam.la: $(shared_objects_pam) $(PAM_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_pam) $(PAM_SHARED_LIBADD)
+

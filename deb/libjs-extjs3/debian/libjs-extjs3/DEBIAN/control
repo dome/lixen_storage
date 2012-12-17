@@ -1,0 +1,11 @@
+Package: libjs-extjs3
+Version: 3.4.0
+Architecture: all
+Maintainer: Volker Theile <volker.theile@openmediavault.org>
+Installed-Size: 43580
+Section: web
+Priority: extra
+Homepage: http://www.sencha.com
+Description: A JavaScript framework and RIA platform
+ Ext is a JavaScript library for building interactive web applications using
+ techniques such as Ajax, DHTML and DOM scripting.

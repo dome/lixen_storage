@@ -1,0 +1,17 @@
+Package: php5-pam
+Source: php-pam
+Version: 1.0.3-1
+Architecture: amd64
+Maintainer: Volker Theile <volker.theile@openmediavault.org>
+Installed-Size: 44
+Depends: libc6 (>= 2.2.5), libpam0g (>= 0.99.7.1), phpapi-20100525
+Section: web
+Priority: optional
+Description: pam module for PHP 5
+ PAM integration
+ .
+ This extension provides PAM (Pluggable Authentication Modules)
+ integration. PAM is a system of libraries that handle the
+ authentication tasks of applications and services. The library
+ provides a stable API for applications to defer to for authentication
+ tasks.
