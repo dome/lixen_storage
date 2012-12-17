@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/modules'
+libdir='/var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3/modules'

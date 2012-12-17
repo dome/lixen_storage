@@ -1,7 +1,7 @@
-srcdir = /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3
-builddir = /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3
-top_srcdir = /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3
-top_builddir = /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3
+srcdir = /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3
+builddir = /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3
+top_srcdir = /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3
+top_builddir = /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3
 EGREP = /bin/grep -E
 SED = /bin/sed
 CONFIGURE_COMMAND = './configure' '--with-php-config=/usr/bin/php-config5' '--prefix=/usr'
@@ -22,15 +22,15 @@ prefix = /usr
 exec_prefix = $(prefix)
 libdir = ${exec_prefix}/lib
 prefix = /usr
-phplibdir = /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/modules
+phplibdir = /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3/modules
 phpincludedir = /usr/include/php5
 CC = cc
-CFLAGS = -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
+CFLAGS = -g -O2
 CFLAGS_CLEAN = $(CFLAGS)
 CPP = cc -E
 CPPFLAGS = -DHAVE_CONFIG_H
 CXX =
-CXXFLAGS = -g -O2
+CXXFLAGS =
 CXXFLAGS_CLEAN = $(CXXFLAGS)
 EXTENSION_DIR = /usr/lib/php5/20100525
 PHP_EXECUTABLE = NONE
@@ -166,8 +166,8 @@ distclean: clean
 
 .PHONY: all clean install distclean test
 .NOEXPORT:
-pam.lo: /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/pam.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/pam.c -o pam.lo 
+pam.lo: /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3/pam.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3/pam.c -o pam.lo 
 $(phplibdir)/pam.la: ./pam.la
 	$(LIBTOOL) --mode=install cp ./pam.la $(phplibdir)
 

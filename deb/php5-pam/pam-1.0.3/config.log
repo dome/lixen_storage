@@ -76,27 +76,27 @@ cc: fatal error: no input files
 compilation terminated.
 configure:2485: $? = 4
 configure:2505: checking whether the C compiler works
-configure:2527: cc -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c  >&5
+configure:2527: cc    conftest.c  >&5
 configure:2531: $? = 0
 configure:2579: result: yes
 configure:2582: checking for C compiler default output file name
 configure:2584: result: a.out
 configure:2590: checking for suffix of executables
-configure:2597: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c  >&5
+configure:2597: cc -o conftest    conftest.c  >&5
 configure:2601: $? = 0
 configure:2623: result: 
 configure:2645: checking whether we are cross compiling
-configure:2653: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c  >&5
+configure:2653: cc -o conftest    conftest.c  >&5
 configure:2657: $? = 0
 configure:2664: ./conftest
 configure:2668: $? = 0
 configure:2683: result: no
 configure:2688: checking for suffix of object files
-configure:2710: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:2710: cc -c   conftest.c >&5
 configure:2714: $? = 0
 configure:2735: result: o
 configure:2739: checking whether we are using the GNU C compiler
-configure:2758: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:2758: cc -c   conftest.c >&5
 configure:2758: $? = 0
 configure:2767: result: yes
 configure:2776: checking whether cc accepts -g
@@ -104,7 +104,7 @@ configure:2796: cc -c -g  conftest.c >&5
 configure:2796: $? = 0
 configure:2837: result: yes
 configure:2854: checking for cc option to accept ISO C89
-configure:2917: cc  -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:2917: cc  -c -g -O2  conftest.c >&5
 configure:2917: $? = 0
 configure:2930: result: none needed
 configure:2956: checking how to run the C preprocessor
@@ -154,7 +154,7 @@ configure:3238: result: yes
 configure:3252: checking for system library directory
 configure:3267: result: lib
 configure:3274: checking if compiler supports -R
-configure:3293: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c -R /usr/lib  >&5
+configure:3293: cc -o conftest -g -O2   conftest.c -R /usr/lib  >&5
 cc: error: unrecognized option '-R'
 configure:3293: $? = 1
 configure: failed program was:
@@ -176,7 +176,7 @@ configure: failed program was:
 | }
 configure:3303: result: no
 configure:3308: checking if compiler supports -Wl,-rpath,
-configure:3327: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c -Wl,-rpath,/usr/lib  >&5
+configure:3327: cc -o conftest -g -O2   conftest.c -Wl,-rpath,/usr/lib  >&5
 configure:3327: $? = 0
 configure:3337: result: yes
 configure:3382: checking build system type
@@ -206,7 +206,7 @@ configure:3805: result: gawk
 configure:3849: checking for PAM support
 configure:3889: result: yes, shared
 configure:4021: checking for pam_start in -lpam
-configure:4046: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c -lpam   >&5
+configure:4046: cc -o conftest -g -O2   conftest.c -lpam   >&5
 configure:4046: $? = 0
 configure:4055: result: yes
 configure:4565: checking how to print strings
@@ -222,7 +222,7 @@ configure:4881: result: yes
 configure:4893: checking for BSD- or MS-compatible name lister (nm)
 configure:4942: result: /usr/bin/nm -B
 configure:5072: checking the name lister (/usr/bin/nm -B) interface
-configure:5079: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:5079: cc -c -g -O2  conftest.c >&5
 configure:5082: /usr/bin/nm -B "conftest.o"
 configure:5085: output
 0000000000000000 B some_variable
@@ -254,7 +254,7 @@ configure:5953: checking for ar
 configure:5969: found /usr/bin/ar
 configure:5980: result: ar
 configure:6017: checking for archiver @FILE support
-configure:6034: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:6034: cc -c -g -O2  conftest.c >&5
 configure:6034: $? = 0
 configure:6037: ar cru libconftest.a @conftest.lst >&5
 configure:6040: $? = 0
@@ -271,16 +271,16 @@ configure:6244: result: ranlib
 configure:6321: checking for gawk
 configure:6348: result: gawk
 configure:6388: checking command to parse /usr/bin/nm -B output from cc object
-configure:6508: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:6508: cc -c -g -O2  conftest.c >&5
 configure:6511: $? = 0
 configure:6515: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:6518: $? = 0
-configure:6584: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c conftstm.o >&5
+configure:6584: cc -o conftest -g -O2   conftest.c conftstm.o >&5
 configure:6587: $? = 0
 configure:6625: result: ok
 configure:6662: checking for sysroot
 configure:6692: result: no
-configure:6769: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:6769: cc -c -g -O2  conftest.c >&5
 configure:6772: $? = 0
 configure:6948: checking for mt
 configure:6964: found /bin/mt
@@ -289,70 +289,70 @@ configure:6998: checking if mt is a manifest tool
 configure:7004: mt '-?'
 configure:7012: result: no
 configure:7649: checking for ANSI C header files
-configure:7669: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7669: cc -c -g -O2  conftest.c >&5
 configure:7669: $? = 0
-configure:7742: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   conftest.c  >&5
+configure:7742: cc -o conftest -g -O2   conftest.c  >&5
 configure:7742: $? = 0
 configure:7742: ./conftest
 configure:7742: $? = 0
 configure:7753: result: yes
 configure:7766: checking for sys/types.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for sys/stat.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for stdlib.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for string.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for memory.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for strings.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for inttypes.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for stdint.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7766: checking for unistd.h
-configure:7766: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7766: cc -c -g -O2  conftest.c >&5
 configure:7766: $? = 0
 configure:7766: result: yes
 configure:7780: checking for dlfcn.h
-configure:7780: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:7780: cc -c -g -O2  conftest.c >&5
 configure:7780: $? = 0
 configure:7780: result: yes
 configure:7986: checking for objdir
 configure:8001: result: .libs
 configure:8272: checking if cc supports -fno-rtti -fno-exceptions
-configure:8290: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -fno-rtti -fno-exceptions conftest.c >&5
+configure:8290: cc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
 configure:8294: $? = 0
 configure:8307: result: no
 configure:8634: checking for cc option to produce PIC
 configure:8641: result: -fPIC -DPIC
 configure:8649: checking if cc PIC flag -fPIC -DPIC works
-configure:8667: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -fPIC -DPIC -DPIC conftest.c >&5
+configure:8667: cc -c -g -O2  -fPIC -DPIC -DPIC conftest.c >&5
 configure:8671: $? = 0
 configure:8684: result: yes
 configure:8713: checking if cc static flag -static works
 configure:8741: result: yes
 configure:8756: checking if cc supports -c -o file.o
-configure:8777: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -o out/conftest2.o conftest.c >&5
+configure:8777: cc -c -g -O2  -o out/conftest2.o conftest.c >&5
 configure:8781: $? = 0
 configure:8803: result: yes
 configure:8811: checking if cc supports -c -o file.o
@@ -360,13 +360,13 @@ configure:8858: result: yes
 configure:8891: checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries
 configure:10048: result: yes
 configure:10085: checking whether -lc should be explicitly linked in
-configure:10093: cc -c -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  conftest.c >&5
+configure:10093: cc -c -g -O2  conftest.c >&5
 configure:10096: $? = 0
 configure:10111: cc -shared  -fPIC -DPIC conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2\>\&1 \| /bin/grep  -lc  \>/dev/null 2\>\&1
 configure:10114: $? = 0
 configure:10128: result: no
 configure:10288: checking dynamic linker characteristics
-configure:10788: cc -o conftest -O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64   -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:10788: cc -o conftest -g -O2   -Wl,-rpath -Wl,/foo conftest.c  >&5
 configure:10788: $? = 0
 configure:11022: result: GNU/Linux ld.so
 configure:11129: checking how to hardcode library paths into programs
@@ -407,13 +407,13 @@ ac_cv_build=x86_64-unknown-linux-gnu
 ac_cv_c_compiler_gnu=yes
 ac_cv_env_CC_set=
 ac_cv_env_CC_value=
-ac_cv_env_CFLAGS_set=set
-ac_cv_env_CFLAGS_value='-O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64'
-ac_cv_env_CPPFLAGS_set=set
+ac_cv_env_CFLAGS_set=
+ac_cv_env_CFLAGS_value=
+ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
 ac_cv_env_CPP_set=
 ac_cv_env_CPP_value=
-ac_cv_env_LDFLAGS_set=set
+ac_cv_env_LDFLAGS_set=
 ac_cv_env_LDFLAGS_value=
 ac_cv_env_LIBS_set=
 ac_cv_env_LIBS_value=
@@ -489,7 +489,7 @@ php_cv_cc_rpath=yes
 AR='ar'
 AWK='gawk'
 CC='cc'
-CFLAGS='-O2 -Wall -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64'
+CFLAGS='-g -O2'
 CONFIGURE_COMMAND=' '\''./configure'\''  '\''--with-php-config=/usr/bin/php-config5'\'' '\''--prefix=/usr'\'''
 CONFIGURE_OPTIONS=' '\''--with-php-config=/usr/bin/php-config5'\'' '\''--prefix=/usr'\'''
 CPP='cc -E'

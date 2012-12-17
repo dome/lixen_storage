@@ -1,5 +1,5 @@
-pam.lo: /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/pam.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /var/lib/lxc/home/dome/devel/openmediavault-code/deb/php5-pam/pam-1.0.3/pam.c -o pam.lo 
+pam.lo: /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3/pam.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /var/lib/lxc/home/dome/devel/lixen_storage/deb/php5-pam/pam-1.0.3/pam.c -o pam.lo 
 $(phplibdir)/pam.la: ./pam.la
 	$(LIBTOOL) --mode=install cp ./pam.la $(phplibdir)
 
